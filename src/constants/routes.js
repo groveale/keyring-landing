@@ -1,8 +1,8 @@
-export const LANDING = '/';
-export const FAQS = '/faqs';
-export const ECOSYSTEM = '/ecosystem';
-export const ABOUT = '/about';
-export const LAUNCH = '/';
-export const TWITTER = '/';
-export const GITHUB = '/';
-export const DISCORD = '/';
+export const LANDING = '/keyring-landing/';
+export const FAQS = '/keyring-landing/faqs';
+export const ECOSYSTEM = '/keyring-landing/ecosystem';
+export const ABOUT = '/keyring-landing/about';
+export const LAUNCH = '/keyring-landing/';
+export const TWITTER = '/keyring-landing/';
+export const GITHUB = '/keyring-landing/';
+export const DISCORD = '/keyring-landing/';
