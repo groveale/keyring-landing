@@ -7,6 +7,7 @@ import {
 import Landing from '../Landing';
 import FAQs from '../Faqs';
 import Ecosystem from '../Ecosystem';
+import About from '../About/about';
 
 import * as ROUTES from '../../constants/routes';
 
@@ -20,6 +21,7 @@ const App = () => (
             <Route exact path={ROUTES.LANDING} element={<Landing/>} />
             <Route path={ROUTES.ECOSYSTEM} element={<Ecosystem/>} />
             <Route path={ROUTES.FAQS} element={<FAQs/>} />
+            <Route path={ROUTES.ABOUT} element={<About/>} />
         </Routes>
         <FooterNav />
     

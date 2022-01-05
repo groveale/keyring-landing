@@ -44,9 +44,10 @@ const LandingNavCollapse = props => {
         </div>
 
         <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse landing` } >
-            <Link class="nav-link" to={ROUTES.ECOSYSTEM}>ECOSYSTEM</Link>
-            <Link class="nav-link" to={ROUTES.FAQS}>FAQS</Link>
-            <Link class="nav-link" to={ROUTES.LAUNCH}>LAUNCH</Link>
+            <Link class="nav-link navigation-headers" to={ROUTES.ECOSYSTEM}>ECOSYSTEM</Link>
+            <Link class="nav-link navigation-headers" to={ROUTES.ABOUT}>About</Link>
+            <Link class="nav-link navigation-headers" to={ROUTES.FAQS}>FAQS</Link>
+            <Link class="nav-link navigation-headers launch-button " to={ROUTES.LAUNCH}>LAUNCH</Link>
         </div>
         </nav>
         </header>
@@ -54,11 +55,12 @@ const LandingNavCollapse = props => {
 }
 
 const FooterNav = () => (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark footer-nav ">
+    <nav class="navbar navbar-expand-lg navbar-dark footer-nav ">
         <div class="container-fluid landing nav-menu">
             <div class="navbar-nav me-auto">
-            <Link class="nav-link" to={ROUTES.LAUNCH}>LAUNCH</Link>
+            <Link class="nav-link launch-button" to={ROUTES.LAUNCH}>LAUNCH</Link>
             <Link class="nav-link" to={ROUTES.ECOSYSTEM}>ECOSYSTEM</Link>
+            <Link class="nav-link" to={ROUTES.ABOUT}>About</Link>
             <Link class="nav-link" to={ROUTES.FAQS}>FAQS</Link>
             </div>
                  

@@ -20,6 +20,15 @@ header {
   .footer-nav {
     background: transparent !important;
   }
+
+.launch-button {
+  background-image: linear-gradient(to right, #53B5CB, #A32EFC);
+  border-radius: .25rem;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+
   
   @media (max-width: 1199.98px) {
     header {
@@ -92,7 +101,7 @@ header {
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     letter-spacing: 0.1rem;
-    font-weight: 500;}
+    font-weight: 700;}
 
 .landing a {
       margin: 0 -2px;
@@ -104,7 +113,7 @@ header {
       text-transform: uppercase;
       padding: 0.5rem 1rem;
       letter-spacing: 0.1rem;
-      font-weight: 500;
+      font-weight: 700;
       white-space: nowrap;
     }
 
@@ -123,7 +132,7 @@ header {
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     letter-spacing: 0.1rem;
-    font-weight: 500;
+    font-weight: 700;
     text-align: end;}
 
     .nav-menu a {
@@ -136,7 +145,7 @@ header {
       text-transform: uppercase;
       padding: 0.5rem 1rem;
       letter-spacing: 0.1rem;
-      font-weight: 500;
+      font-weight: 700;
       text-align: end;
     }
 }

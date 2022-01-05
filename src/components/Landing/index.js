@@ -1,5 +1,6 @@
 import React from 'react';
 import './landing.css';
+import { Link } from 'react-router-dom';
 
 import secureIcon from '../../img/lock-icon.png'
 import trustedIcon from '../../img/star-icon.png'
@@ -7,6 +8,8 @@ import supportedIcon from '../../img/cog-icon.png'
 import banner from '../../img/banner-asset.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
+
+import * as ROUTES from '../../constants/routes';
 
 const Landing = () => (
   <div>
@@ -25,9 +28,15 @@ const LandingHeader = () => (
                     <h2 class="headers">Protocol</h2> 
                     <p class="text p-heading">Verify exchange users with confidence using our leading KYC protocol</p>  
                     <div class="socials col-md-3">
-                        <FontAwesomeIcon color='#ffffff' size="2x" icon={faTwitter} />
-                        <FontAwesomeIcon color='#ffffff' size="2x" icon={faGithub} />
-                        <FontAwesomeIcon color='#ffffff' size="2x" icon={faDiscord} />
+                        <Link to={ROUTES.TWITTER}>
+                            <FontAwesomeIcon color='#ffffff' size="2x" icon={faTwitter} />
+                        </Link>
+                        <Link to={ROUTES.GITHUB}>
+                            <FontAwesomeIcon color='#ffffff' size="2x" icon={faGithub} />
+                        </Link>
+                        <Link to={ROUTES.DISCORD}>
+                            <FontAwesomeIcon color='#ffffff' size="2x" icon={faDiscord} />
+                        </Link>
                     </div>
                 </div>
                 <div class="col-md-6">
