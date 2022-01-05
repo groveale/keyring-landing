@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiscord, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
  
 import * as ROUTES from '../../constants/routes';
 
@@ -52,17 +54,18 @@ const LandingNavCollapse = props => {
 }
 
 const FooterNav = () => (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark footer-nav ">
         <div class="container-fluid landing nav-menu">
             <div class="navbar-nav me-auto">
             <Link class="nav-link" to={ROUTES.LAUNCH}>LAUNCH</Link>
             <Link class="nav-link" to={ROUTES.ECOSYSTEM}>ECOSYSTEM</Link>
             <Link class="nav-link" to={ROUTES.FAQS}>FAQS</Link>
             </div>
-
-            <Link class="nav-link" to={ROUTES.DISCORD}>Discord</Link>
-            <Link class="nav-link" to={ROUTES.GITHUB}>Github</Link>
-            <Link class="nav-link" to={ROUTES.TWITTER}>Twitter</Link>
+                 
+            <Link class="nav-link" to={ROUTES.DISCORD}><FontAwesomeIcon size="lg" icon={faDiscord} /></Link>
+            <Link class="nav-link" to={ROUTES.GITHUB}><FontAwesomeIcon size="lg" icon={faGithub} /></Link>
+            <Link class="nav-link" to={ROUTES.TWITTER}><FontAwesomeIcon size="lg" icon={faTwitter} /></Link>
+            
         </div>
         </nav>
 );

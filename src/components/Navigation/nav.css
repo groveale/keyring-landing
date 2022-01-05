@@ -16,6 +16,10 @@ header {
     z-index: 5;
     background: transparent !important;
   }
+
+  .footer-nav {
+    background: transparent !important;
+  }
   
   @media (max-width: 1199.98px) {
     header {

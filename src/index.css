@@ -18,6 +18,26 @@ body {
   align-items: center;
 }
 
+.headers {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase; 
+  color: white;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #F2F2F2;
+}
+
+.navigation-headers {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; 
+  color: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
